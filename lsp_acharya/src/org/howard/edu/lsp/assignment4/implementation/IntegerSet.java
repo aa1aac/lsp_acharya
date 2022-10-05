@@ -163,6 +163,7 @@ public class IntegerSet {
 
 	/**
 	 * {@summary method to return the string representation of the set}
+	 * @return string value of the set
 	 */
 	public String toString() {
 //		change the set to the string
