@@ -1,8 +1,8 @@
-package org.howard.edu.assignment5;
+package org.howard.edu.lsp.assignment5;
 
 import static org.junit.Assert.*;
 
-import org.howard.edu.assignment5.IntegerSet.IntegerSetException;
+import org.howard.edu.lsp.assignment5.IntegerSet.IntegerSetException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
