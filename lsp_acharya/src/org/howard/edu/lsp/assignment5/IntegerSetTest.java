@@ -16,6 +16,7 @@ import org.junit.jupiter.api.DisplayName;
 /**
  * {@summary Responsible for the implementation of test cases of the IntegerSet}
  * Class IntegerSet
+ * @author Aayush Acharya
  */
 public class IntegerSetTest {
 	IntegerSet set1;
