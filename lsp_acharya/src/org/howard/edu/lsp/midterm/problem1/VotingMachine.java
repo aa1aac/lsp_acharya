@@ -72,7 +72,7 @@ public class VotingMachine {
 				throw (new UnknownCandidateException());
 			}
 			
-					}
+			}
 
 		/**
 		 * {@summary a method to return the sum of the total votes casted}
