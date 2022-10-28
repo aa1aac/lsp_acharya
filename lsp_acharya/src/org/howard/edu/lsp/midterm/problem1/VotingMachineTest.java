@@ -37,7 +37,10 @@ class VotingMachineTest {
 	}
 
 	
-	
+	/**
+	 * {@summary test case for the getVotes}
+	 * @throws UnknownCandidateException when the candidate does not exist
+	 */
 	@Test
 	@DisplayName("Test case for getVotes")
 	public void testGetVotes() throws UnknownCandidateException {
