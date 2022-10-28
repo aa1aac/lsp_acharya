@@ -60,25 +60,19 @@ public class VotingMachine {
 		 * @throws UnknownCandidateException if the name doesn't exist
 		 * @param names String names of the candidates
 		 */
-		public int getVotes(String[] names)  throws UnknownCandidateException {
+		public int getVotes(String name)  throws UnknownCandidateException {
 			// Return the number of votes for a given candidate.  Throws
 			// UnknownCandidateException if name not present.  Make this a 
 			// checked exception.
-			int total = 0;
-			int namesVotes[] = new int[names.length];
 			
-			for(int i = 0; i < names.length; i++) {
-				if(votes.containsKey(names[i])) {
-					namesVotes[i] = votes.get(names[i]);
-					total += votes.get(names[i]);
-				} 
-				else {
-					throw (new UnknownCandidateException());
-				}
+			if (votes.containsKey(name)) {
+				return votes.get(name);
+			}
+			else {
+				throw (new UnknownCandidateException());
 			}
 			
-			return total;
-		}
+					}
 
 		/**
 		 * {@summary a method to return the sum of the total votes casted}

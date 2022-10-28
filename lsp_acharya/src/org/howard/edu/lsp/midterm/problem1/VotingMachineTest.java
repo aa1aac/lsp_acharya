@@ -47,14 +47,11 @@ class VotingMachineTest {
 		
 		assertThrows("test when we ask to get votes for the candidate not in the votes ", UnknownCandidateException.class ,
 				() -> {
-					String[] arr = {"jon"};
-					votingMachine1.getVotes(arr);
+					votingMachine1.getVotes("jon");
 				}
 				);
 		
-		String[] arr = {"john"};
-
-		assertEquals("test to find total votes of the votingMachine", votingMachine1.getVotes(arr), 100);
+		assertEquals("test to find total votes of the votingMachine", votingMachine1.getVotes("john"), 100);
 	}
 	
 	/**
