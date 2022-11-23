@@ -62,7 +62,7 @@ class AverageContextTest {
 	}
 	
 	/**
-	 * {@summary a method that tests the calculate average method}
+	 * {@summary a test method that tests the calculate average method}
 	 * @throws EmptyListException when an empty list is provided to the compute method of the AverageContext
 	 */
 	@Test
@@ -79,7 +79,7 @@ class AverageContextTest {
 		grades = new ArrayList<Integer>();
 		
 		
-
+//      add grades value
 		grades.add(98);
 		grades.add(97);
 		grades.add(93);
@@ -90,26 +90,24 @@ class AverageContextTest {
 		
 		grades1 = new ArrayList<Integer>();
 		
-		
+//		check for all average
 		assertEquals("The average value of [98, 97, 93, 92, 95, 98, 100] is 96", 96, allAverage.calculateAverage(grades));
-		
+//		check for all average with empty list
 		assertThrows("when we find the average value of the grades: [], it should raise EmptyListException", EmptyListException.class ,
 				() -> {
 					
 					allAverage.calculateAverage(grades1);
 				}
 				);
-		
+//		check the dropped average
 		assertEquals("The average value of [98, 97, 93, 92, 95, 98, 100] when dropped the grade is 98", droppedAverage.calculateAverage(grades), 98);
-		
+//		check the dropped average for empty list
 		assertThrows("when we find the average value after dropping of the grades: [], it should raise EmptyListException", EmptyListException.class ,
 				() -> {
 					droppedAverage.calculateAverage(grades1);
 				}
 				);
 	}
-	
-	
 	
 	
 

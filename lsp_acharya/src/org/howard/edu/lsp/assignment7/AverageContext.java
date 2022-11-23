@@ -35,7 +35,10 @@ public class AverageContext {
 		}
 		
 	}
-	
+	/**
+	 * {@summary method to return the type of the strategy}
+	 * @return type of strategy
+	 */
 	public Object getStrategyType () {
 		return this.strategy.getClass();
 	}

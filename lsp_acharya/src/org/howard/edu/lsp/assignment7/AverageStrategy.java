@@ -3,6 +3,7 @@ package org.howard.edu.lsp.assignment7;
 import java.util.List;
 
 /**
+ * Aayush Acharya
  * {@summary an interface for the Average Strategy}
  * @author Aayush Acharya
  *
